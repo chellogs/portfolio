@@ -1,0 +1,1103 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	color:#B98C41;
+}
+
+#container {
+	width: 1400px;
+	height:800px;
+    overflow:hidden;  /*So the extra stuff is not seen */
+    position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+#allScenes {
+  /* This is the stuff that moves.  */
+   position:absolute;
+   width:4000px;
+   height:6000px;
+   top:0px;
+   left:0px;
+   -webkit-transition:all 3.0s ease-in-out;
+   -moz-transition:all 3.0s ease-in-out;
+   -o-transition:all 3.0s ease-in-out;
+   transition:all 3.0s ease-in-out;
+}
+.theScenes{
+	width: 1400px;
+	position: absolute;
+	height: 800px;
+	padding: 0;
+	margin: 0;
+	left: 1px;
+	top: 1px;
+
+}
+/* Index */
+#index{
+	top: -1px;
+	left: -2px;
+		}
+#indexBack{
+	width: 1366px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+}
+#title{
+	width: 917px;
+	height: 480px;
+	position: absolute;
+	top: 6px;
+	left: 240px;
+	-webkit-animation: fadein 4s;
+       -moz-animation: fadein 4s;
+        -ms-animation: fadein 4s; 
+         -o-animation: fadein 4s; 
+            animation: fadein 4s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#titlefly1{
+	width: 72px;
+	height: 63px;
+	position: absolute;
+	left: 696px;
+	top: 420px;
+	cursor:pointer;
+	transition:2s;
+}
+#titlefly2{
+	position: absolute;
+	width: 80px;
+	height: 73px;
+	left: 1000px;
+	top: 100px;
+	cursor:pointer;
+	transition:2s;
+}
+#titlefly3{
+	position: absolute;
+	width: 59px;
+	height: 53px;
+	left: 200px;
+	top: 294px;
+	cursor:pointer;
+	transition:2s;
+}
+
+		/* TEST CIRLCES */
+/*#circle {
+	width: 50px;
+	height: 50px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	left: 15px;
+	top: 8px;
+}
+#circle2 {
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	top: 10px;
+	left: 131px;
+}
+#circle3{
+	width: 50px;
+	height: 50px;
+	background: pink;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	left: 15px;
+	top: 126px;
+}
+#circle4{
+	width: 50px;
+	height: 50px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	left: 133px;
+	top: 126px;
+}
+#circle5{
+	width: 50px;
+	height: 50px;
+	background: purple;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	left: 248px;
+	top: 128px;
+}
+#circle6{
+	width: 50px;
+	height: 50px;
+	background: green;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	left: 17px;
+	top: 239px;
+}
+#circle7{
+	width: 50px;
+	height: 50px;
+	background: orange;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	left: 132px;
+	top: 239px;
+}
+		/* TEST END */
+/* END Index */
+
+/* Mist 1 */
+#mist1{
+	top: 0px;
+	left: 1400px;
+	}
+#mist1Back{
+		width: 1366px;
+		height: 768px;
+		top:0px;
+		left:1400px;
+}
+#dog1{
+	width: 105px;
+	height: 150px;
+	top: 515px;
+	left: 469px;
+	z-index: 1;
+	visibility: hidden;
+}
+#figure1{
+	width: 423px;
+	height: 702px;
+	top: 60px;
+	left: 260px;
+	cursor: crosshair;
+}
+#bird1{
+	width: 149px;
+	height: 101px;
+	top: 200px;
+	left: 100px;
+	visibility: hidden;
+}
+
+#live1{
+	width: 113px;
+	height: 217px;
+	top: 358px;
+	left: 900px;
+	visibility: hidden;
+}
+#live2{
+	width: 115px;
+	height: 220px;
+	left: 950px;
+	top: 300px;
+	visibility: hidden;
+}
+#dead1{
+	width: 117px;
+	height: 183px;
+	top: 359px;
+	left: 1020px;
+	visibility: hidden;
+}
+#petal1{
+	width: 46px;
+	height: 55px;
+	top: 420px;
+	left: 1050px;
+	visibility: hidden;
+}
+#petal2{
+	width: 41px;
+	height: 56px;
+	top: 451px;
+	left: 1095px;
+	visibility: hidden;
+}
+#petal3{
+	width: 58px;
+	height: 42px;
+	top: 490px;
+	left: 1060px;
+	visibility: hidden;
+}
+
+#orb1{
+	width: 73px;
+	height: 74px;
+	top: 70px;
+	left: 900px;
+	transition: 2s;
+}
+#orb2{
+	width: 86px;
+	height: 86px;
+ 	top: 250px;
+	left: 800px;
+	z-index: 1;
+	transition: 2s;
+}
+#orb3{
+	width: 82px;
+	height: 81px;
+	top: 160px;
+	left: 1100px;
+	transition: 2s;
+}
+
+						/* RETURN */
+#mist1Return{
+	width: 100px;
+	height: 100px;
+	background: purple;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+	left: 49px;
+	top: 638px;
+}
+/* END Mist 1 */
+
+/* Mist 2 */
+#mist2{
+	top: 0px;
+	left: 2800px;
+}
+
+#mist2Back{
+	width: 1366px;
+	height: 768px;
+	top: 0px;
+	left: 2800px;
+}
+#mist2figure{
+	width: 80px;
+	height: 314px;
+	top: 149px;
+	left: 483px;
+	z-index: 1;
+}
+#bird2{
+	width: 88px;
+	height: 121px;
+	top: 186px;
+	left: 730px;
+	z-index: 1;
+	visibility: hidden;
+}
+#birdhouse{
+	width: 93px;
+	height: 98px;
+	top: 300px;
+	left: 670px;
+	z-index: 1;
+	visibility: hidden;
+}
+#bun2{
+	width: 109px;
+	height: 84px;
+	top: 420px;
+	left: 932px;
+	z-index: 1;
+	visibility: hidden;
+}
+#cookie1{
+	width: 61px;
+	height: 44px;
+	top: 494px;
+	left: 425px;
+	z-index: 1;
+	visibility: hidden;
+}
+#cookie2{
+	width: 47px;
+	height: 49px;
+	top: 508px;
+	left: 480px;
+	z-index: 1;
+	visibility: hidden;
+}
+#cookie3{
+	width: 57px;
+	height: 57px;
+	top: 550px;
+	left: 460px;
+	z-index: 1;
+	visibility: hidden;
+}
+#cookieFull{
+	width: 90px;
+	height: 57px;
+	top: 450px;
+	left: 425px;
+	z-index: 1;
+	visibility: hidden;
+}
+#plant1{
+	width: 99px;
+	height: 128px;
+	top: 300px;
+	left: 1150px;
+	z-index: 1;
+	visibility: hidden;
+}
+#plant2{
+	width: 130px;
+	height: 91px;
+	top: 290px;
+	left: 150px;
+	z-index: 1;
+	visibility: hidden;
+}
+#page2prints1{
+	width: 204px;
+	height: 125px;
+	top: 640px;
+	left: 540px;
+	z-index: 1;
+	visibility: hidden;
+}
+#page2prints2{
+	width: 105px;
+	height: 111px;
+	top: 579px;
+	left: 743px;
+	z-index: 1;
+	visibility: hidden;
+}
+#page2prints3{
+	width: 108px;
+	height: 84px;
+	top: 520px;
+	left: 850px;
+	z-index: 1;
+	visibility: hidden;
+}
+					/* RETURN */
+mist2Return{
+	width: 100px;
+	height: 100px;
+	background: purple;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/* END Mist 2 */
+
+/* Mist 3 */
+#mist3{
+	top: 800px;
+	left: 0px;
+}
+
+#mist3Back{
+	width: 1366px;
+	height: 768px;
+	top: 800px;
+	left: 0px;
+}
+#mist3wolf{
+	width: 160px;
+	height: 268px;
+	top: 130px;
+	left: 970px;
+	visibility: hidden;
+}
+#bird3{
+	width: 195px;
+	height: 91px;
+	top: 280px;
+	left: 900px;
+	visibility: hidden;
+}
+#boots{
+	width: 206px;
+	height: 177px;
+	top: 400px;
+	left: 398px;
+	cursor: pointer;
+}
+#feather1{
+	width: 66px;
+	height: 75px;
+	top: 165px;
+	left: 140px;
+	visibility: hidden;
+}
+#feather2{
+	width: 72px;
+	height: 62px;
+	top: 90px;
+	left: 500px;
+	visibility: hidden;
+}
+#feather3{
+	width: 101px;
+	height: 49px;
+	top: 435px;
+	left: 730px;
+	visibility: hidden;
+}
+#feather4{
+	width: 81px;
+	height: 73px;
+	top: 300px;
+	left: 838px;
+	visibility: hidden;
+}
+#paw{
+	width: 100px;
+	height: 120px;
+	top: 320px;
+	left: 200px;
+	visibility: hidden;
+}
+#ribbon{
+	width: 89px;
+	height: 166px;
+	top: 12px;
+	left: 970px;
+	cursor: crosshair;
+	visibility: hidden;
+}
+#scratch1{
+	width: 86px;
+	height: 80px;
+	top: 190px;
+	left: 300px;
+	visibility: hidden;
+}
+#scratch2{
+	width: 64px;
+	height: 60px;
+	top: 170px;
+	left: 390px;
+	visibility: hidden;
+}
+#scratch3{
+	width: 50px;
+	height: 92px;
+	top: 90px;
+	left: 430px;
+	visibility: hidden;
+}
+#scratch4{
+	width: 95px;
+	height: 96px;
+	top: 120px;
+	left: 570px;
+	visibility: hidden;
+}
+#scratch5{
+	width: 110px;
+	height: 100px;
+	top: 222px;
+	left: 609px;
+	visibility: hidden;
+}
+#scratch6{
+	width: 75px;
+	height: 76px;
+	top: 150px;
+	left: 790px;
+	visibility: hidden;
+}
+#scratch7{
+	width: 73px;
+	height: 62px;
+	top: 430px;
+	left: 890px;
+	visibility: hidden;
+}
+#scratch8{
+	width: 93px;
+	height: 90px;
+	top: 70px;
+	left: 870px;
+	visibility: hidden;
+}
+#scratch9{
+	width: 85px;
+	height: 77px;
+	top: 100px;
+	left: 1100px;
+	visibility: hidden;
+}
+
+				/* RETURN */
+#mist3Return{
+	width: 100px;
+	height: 100px;
+	background: purple;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	top: 800px;
+	left: 0px;
+}
+
+
+/* END Mist 3 */
+
+/* Mist 4 */
+#mist4{
+	top: 800px;
+	left: 1400px;
+}
+
+#mist4Back{
+	width: 1366px;
+	height: 768px;
+	top: 800px;
+	left: 1400px;
+}
+
+				/* RETURN */
+#mist4Return{
+	width: 100px;
+	height: 100px;
+	background: purple;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+}
+#arrow{
+	width: 140px;
+	height: 208px;
+	top: 5px;
+	left: 730px;
+	visibility: hidden;
+}
+#bigdeer{
+	width: 279px;
+	height: 325px;
+	top: 150px;
+	left: 680px;
+	visibility: hidden;
+}
+#candy{
+	width: 173px;
+	height: 293px;
+	top: 430px;
+	left: 560px;
+}
+#candyflower{
+	width: 173px;
+	height: 293px;
+	top: 430px;
+	left: 560px;
+	visibility: hidden;
+}
+#fly1{
+	width: 126px;
+	height: 107px;
+	top: 180px;
+	left: 450px;
+	visibility: hidden;
+}
+#fly2{
+	width: 117px;
+	height: 76px;
+	top: 390px;
+	left: 1070px;
+	visibility: hidden;
+}
+#littledeer{
+	width: 150px;
+	height: 240px;
+	top: 120px;
+	left: 180px;
+	visibility: hidden;
+}
+#particle1{
+	width: 77px;
+	height: 69px;
+	top: 140px;
+	left: 110px;
+	visibility: hidden;
+}
+#particle2{
+	width: 122px;
+	height: 118px;
+	top: 200px;
+	left: 1150px;
+	visibility: hidden;
+}
+#page3plant1{
+	width: 206px;
+	height: 223px;
+	top: 400px;
+	left: 360px;
+	visibility: hidden;
+}
+#page3plant2{
+	width: 144px;
+	height: 142px;
+	top: 470px;
+	left: 1070px;
+	visibility: hidden;
+}
+/* END Mist 4 */
+
+/* Mist 5 */
+#mist5{
+	top: 800px;
+	left: 2800px;
+}
+
+#mist5Back{
+	width: 1366px;
+	height: 768px;
+	top: 800px;
+	left: 2800px;
+}
+
+				/* RETURN */
+#mist5Return{
+	width: 100px;
+	height: 100px;
+	background: purple;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+}
+#fawn{
+	width: 154px;
+	height: 294px;
+	top: 300px;
+	left: 700px;
+	visibility: hidden;
+}
+#apple1{
+	width: 101px;
+	height: 103px;
+	top: 460px;
+	left: 1200px;
+	visibility: hidden;
+}
+#apple2{
+	width: 78px;
+	height: 78px;
+	top: 400px;
+	left: 50px;
+	visibility: hidden;
+}
+#moon{
+	width: 109px;
+	height: 90px;
+	top: 25px;
+	left: 680px;
+	visibility: hidden;
+}
+#nest{
+	width: 159px;
+	height: 145px;
+	top: 110px;
+	left: 715px;
+	
+}
+#print1{
+	width: 164px;
+	height: 40px;
+	top: 700px;
+	left: 870px;
+	visibility: hidden;
+}
+#print2{
+	width: 42px;
+	height: 43px;
+	top: 670px;
+	left: 800px;
+	visibility: hidden;
+}
+#print3{
+	width: 89px;
+	height: 103px;
+	top: 620px;
+	left: 650px;
+	visibility: hidden;
+}
+#print4{
+	width: 65px;
+	height: 82px;
+	top: 570px;
+	left: 730px;
+	visibility: hidden;
+}
+#snow{
+	width: 1366px;
+	height: 768px;
+	top: 5px;
+	left: 5px;
+	visibility: hidden;
+}
+
+/* END Mist 5 */
+
+/* Mist 6 */
+#mist6{
+	top: 1600px;
+	left: 0px;
+}
+
+#mist6Back{
+	width: 1366px;
+	height: 768px;
+	top: 1600px;
+	left: 0px;
+}
+#botfeather{
+	width: 244px;
+	height: 279px;
+	top: 500px;
+	left: 580px;
+	visibility: hidden;
+}
+#branch1{
+	width: 158px;
+	height: 203px;
+	top: 320px;
+	left: 410px;
+	visibility: hidden;
+}
+#branch2{
+	width: 144px;
+	height: 206px;
+	top: 250px;
+	left: 820px;
+	visibility: hidden;
+}
+#dust1{
+	width: 88px;
+	height: 294px;
+	top: 200px;
+	left: 150px;
+	visibility: hidden;
+	transition:2s;
+}
+#dust2{
+	width: 68px;
+	height: 79px;
+	top: 450px;
+	left: 1000px;
+	visibility: hidden;
+	transition:2s;
+}
+#dust3{
+	width: 87px;
+	height: 80px;
+	top: 500px;
+	left: 50px;
+	visibility: hidden;
+	transition:2s;
+}
+#dust4{
+	width: 90px;
+	height: 82px;
+	top: 190px;
+	left: 1015px;
+	visibility: hidden;
+	transition:2s;
+}
+#dust5{
+	width: 64px;
+	height: 60px;
+	top: 50px;
+	left: 550px;
+	visibility: hidden;
+	transition:2s;
+}
+#dust6{
+	width: 80px;
+	height: 73px;
+	top: 80px;
+	left: 1150px;
+	visibility: hidden;
+	transition:2s;
+}
+#dust7{
+	width: 65px;
+	height: 58px;
+	top: 570px;
+	left: 450px;
+	visibility: hidden;
+	transition:2s;
+}
+#eye1{
+	width: 68px;
+	height: 42px;
+	top: 250px;
+	left: 270px;
+}
+#eye2{
+	width: 90px;
+	height: 76px;
+	top: 450px;
+	left: 880px;
+	visibility: hidden;
+}
+#feathersbig{
+	width: 1366px;
+	height: 768px;
+	visibility: hidden;
+}
+
+
+				/* RETURN */
+#mist6Return{
+	width: 100px;
+	height: 100px;
+	background: purple;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+}
+#owl{
+	width: 124px;
+	height: 179px;
+	top: 390px;
+	left: 670px;
+	z-index: 1;
+	visibility: hidden;
+}
+/* END Mist 6 */
+
+/* Mist 7 */
+#mist7{
+	top: 1600px;
+	left: 1400px;
+}
+
+#mist7Back{
+	width: 1366px;
+	height: 768px;
+	top: 1600px;
+	left: 1400px;
+}
+#mist7Return{
+	width: 100px;
+	height: 100px;
+	background: purple;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: absolute;
+}
+#bird7{
+	width: 96px;
+	height: 76px;
+	position: absolute;
+	top: 10px;
+	left: 900px;
+	cursor: pointer;
+}
+#page7fly1{
+	width: 54px;
+	height: 58px;
+	top: 200px;
+	left: 1000px;
+	transition: 2s;
+}
+#page7fly2{
+	width: 65px;
+	height: 68px;
+	top: 300px;
+	left: 400px;
+	transition: 2s;
+}
+#page7fly3{
+	width: 64px;
+	height: 58px;
+	top: 100px;
+	left: 100px;
+	transition: 2s;
+}
+#glow7{
+	width: 183px;
+	height: 186px;
+	top: 155px;
+	left: 550px;
+}
+
+
+/* Page 8 */
+#mist8{
+	top: 1600px;
+	left: 2800px;
+}
+#mist8back{
+	width: 1366px;
+	height: 768px;
+	top: 1600px;
+	left: 2800px;
+}
+#eb1{
+	width: 109px;
+	height: 169px;
+	top: 50px;
+	left: 70px;
+}
+#eb2{
+	width: 106px;
+	height: 149px;
+	top: 180px;
+	left: 560px;
+	visibility: hidden;
+}
+#eb3{
+	width: 99px;
+	height: 108px;
+	top: 5px;
+	left: 1020px;
+	visibility: hidden;
+}
+#eb4{
+	width: 103px;
+	height: 121px;
+	top: 50px;
+	left: 350px;
+	visibility: hidden;
+}
+#eb5{
+	width: 113px;
+	height: 156px;
+	top: 320px;
+	left: 1220px;
+	visibility: hidden;
+}
+#ebs{
+	width: 154px;
+	height: 142px;
+	top: 430px;
+	left: 150px;
+	visibility: hidden;
+}
+#girl{
+	width: 183px;
+	height: 273px;
+	top: 190px;
+	left: 810px;
+	visibility: hidden;
+}
+#ebhand{
+	width: 300px;
+	height: 160px;
+	top: 560px;
+	left: 700px;
+	opacity: 0.6;
+	visibility: hidden;
+}
+
+/* Page 9 */
+#mist9{
+	top: 3200px;
+	left: 1400px;
+}
+#mist9back{
+	width: 1366px;
+	height: 768px;
+	top: 3200px;
+	left: 1400px;
+}
+#hands{
+	width: 766px;
+	height: 730px;
+	top: 5px;
+	left: 350px;
+}
+#crack1{
+	width: 1366px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+}
+#crack2{
+	width: 1366px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+}
+#crack3{
+	width: 1366px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+}
+#crack4{
+	width: 1366px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+}
+#crack5{
+	width: 1366px;
+	height: 768px;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+}
+

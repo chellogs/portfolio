@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+<meta  http-equiv="Content-Type" content="text/html;" charset="utf-8">
+<title>smithcn_BFA</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<link href="Renew_styles.css" rel="stylesheet" type="text/css">
+<script type="application/javascript" src="renewjava.js"></script>
+<style>body {
+    background-image: url(images/index/back.png);
+    background-repeat: repeat-x;
+}
+	</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="allScenes">
+		
+		<!-- INDEX -->
+  		<div id="index" class="theScenes">
+			
+		  <div id="indexBack"><img src="images/index/indexBack.png" width="1366" height="768" position="absolute"></div>
+			<div id="title" class="theScenes">
+				<a href="#" value="PLAY" onmouseenter="play()" onClick="moveX(1400); moveY(0)"><img src="images/index/title.png" width="917" height="480" position="absolute"
+					onMouseOver="document.title.src = titleCursorOn;"
+					onMouseOut="document.title.src = titleCursorOff;" name="title"></div></a>
+			<audio id="audio" loop src="sounds/musicBack.mp3"></audio>
+			<!-- Fireflies -->
+			
+			<div id="titlefly1" onMouseOver="changePosition('titlefly1', 900, 300, 700, 400)">
+				<img src="images/index/fly1.png"></div>
+			<div id="titlefly2" onMouseOver="changePosition('titlefly2', 50, 600, 500, 200)">
+        		<img src="images/index/fly2.png"></div>
+   			<div id="titlefly3" onMouseOver="changePosition('titlefly3', 300, 500, 300, 400)">   
+        		<img src="images/index/fly3.png"></div>
+				
+		<!-- Test Cirlces -->		
+	
+ 		<!-- END Test -->
+			
+		</div>
+	
+	
+		
+		<!-- Mist 1 -->
+  		<div id="mist1" class="theScenes">
+			<div id="mist1Back"><img src="images/page1images/page1BACK.png" width="1366" height="768" position="absolute"></div>
+			
+			<a href="#"><div id="bird1" class="theScenes" onmouseenter="show('dog1'); playSound('p1bit1')"><img src="images/page1images/bird.png"><audio id="p1bit1" preload="auto">
+								<source src="sounds/bit1.wav"/>
+								</audio></div></a>
+			
+			<a href="#" onClick="moveX(2800); moveY(0)"><div id="dog1" class="theScenes"><img src="images/page1images/dog.png"></div></a>
+			
+			<a href="#"><div id="live1" class="theScenes" onmouseenter="show('live2'); playSound('p1bit2')"><img src="images/page1images/live1.png"><audio id="p1bit2" preload="auto">
+								<source src="sounds/bit2.wav"/>
+								</audio></div></a>
+			<a href="#"><div id="live2" class="theScenes" onmouseenter="show('dead1'); playSound('p1bell1')"><img src="images/page1images/live2.png"><audio id="p1bell1" preload="auto">
+								<source src="sounds/bell1.mp3"/>
+								</audio></div></a>
+			<a href="#"><div id="dead1" class="theScenes" onmouseenter="show('petal1')"><img src="images/page1images/dead.png"></div></a>
+			<a href="#"><div id="petal1" class="theScenes" onmouseenter="show('petal2')"><img src="images/page1images/petal1.png"></div></a>
+			<a href="#"><div id="petal2" class="theScenes" onmouseenter="show('petal3')"><img src="images/page1images/petal2.png"></div></a>
+			<a href="#"><div id="petal3" class="theScenes" onmouseenter="show('bird1'); playSound('p1bird1')"><img src="images/page1images/petal3.png"><audio id="p1bird1" preload="auto">
+								<source src="sounds/bird1.mp3"/>
+								</audio></div></a>
+			
+			<div id="orb1" class="theScenes" onMouseOver="changePosition('orb1', 1000, 1100, 1200)">
+				<img src="images/page1images/orb1.png"></div>
+			<div id="orb2" class="theScenes" onMouseOver="changePosition('orb2', 500, 600, 800)">
+				<img src="images/page1images/orb2.png"></div>
+			<div id="orb3" class="theScenes" onMouseOver="changePosition('orb3', 1000, 1200, 1300)">
+				<img src="images/page1images/orb3.png"></div>
+			
+			<div id="figure1" class="theScenes"  onmouseenter="show('live1'); playSound('p1hum1')">
+				<a href="#"><img src="images/page1images/figure1.png" width="423" height="702"><audio id="p1hum1" preload="auto">
+								<source src="sounds/hum1.mp3"/>
+								</audio></a></div>
+			
+		  
+	  </div>
+	
+		<!-- Mist 2 -->
+		<div id="mist2" class="theScenes">
+				
+			<div id="mist2Back"><img src="images/page2images/page2BACK.png" width="1366" height="768" position="absolute"></div>
+				<!-- Leave -->
+			<a href="#" onClick="moveX(0); moveY(800)"><div id="bird2" class="theScenes"><img src="images/page2images/bird.png" name="bird2" 
+						onmouseover = "document.bird2.src = bird2CursorOn;"
+						onmouseout = "document.bird2.src = bird2CursorOff;"></div></a>
+			
+			<a href="#" onmouseenter="show('cookie1')"><div id="birdhouse" class="theScenes"><img src="images/page2images/birdhouse.png"></div></a>
+			<a href="#" ><div id="bun2" class="theScenes" onmouseenter="show('bird2'); playSound('p2bird3')"><img src="images/page2images/bun.png" name="bun2"
+						onmouseover = "document.bun2.src = bunCursorOn;"
+						onmouseout = "document.bun2.src = bunCursorOff;"><audio id="p2bird3" preload="auto">
+								<source src="sounds/bird3.mp3"/>
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('page2prints1')"><div id="cookieFull" class="theScenes"><img src="images/page2images/cookiesfull.png"></div></a>
+			<a href="#" onmouseenter="show('plant1')"><div id="cookie1" class="theScenes"><img src="images/page2images/cookie1.png"></div></a>
+			<a href="#" ><div id="cookie2" class="theScenes" onmouseenter="show('plant2'); playSound('p2bit6')"><img src="images/page2images/cookie2.png"><audio id="p2bit6" preload="auto">
+								<source src="sounds/bit6.wav"/>
+								</audio></div></a>
+			<a href="#" onmouseenter="show('page2prints3')"><div id="cookie3" class="theScenes"><img src="images/page2images/cookie3.png"></div></a>
+			
+			<a href="#" ><div id="plant1" class="theScenes" onmouseenter="show('page2prints2'); show('cookie2'); playSound('p2bit3')"><img src="images/page2images/plant1.png" name="plant1" 
+						onmouseover = "document.plant1.src = plant1CursorOn;"
+						onmouseout = "document.plant1.src = plant1CursorOff;"><audio id="p2bit3" preload="auto">
+								<source src="sounds/bit3.wav"/>
+								</audio></div></a>
+			
+			<a href="#" ><div id="plant2" class="theScenes" onmouseenter="show('cookie3'); playSound('p2chime2')"><img src="images/page2images/plant2.png" name="plant2" 
+						onmouseover = "document.plant2.src = plant2CursorOn;"
+						onmouseout = "document.plant2.src = plant2CursorOff;"><audio id="p2chime2" preload="auto">
+								<source src="sounds/chime2.mp3"/>
+								</audio></div></a>
+			
+			<a href="#" ><div id="page2prints1" class="theScenes" onmouseenter="show('birdhouse'); playSound('p2bird2')"><img src="images/page2images/prints1.png"><audio id="p2bird2" preload="auto">
+								<source src="sounds/bird2.mp3"/>
+								</audio></div></a>
+			<div id="page2prints2" class="theScenes"><img src="images/page2images/prints2.png"></div>
+			<a href="#" onmouseenter="show('bun2')"><div id="page2prints3" class="theScenes"><img src="images/page2images/prints3.png"></div></a>
+			
+			<a href="#"><div id="mist2figure" class="theScenes" onmouseenter="show('cookieFull'); playSound('p2hum2')"><img src="images/page2images/page2figure1.png"><audio id="p2hum2" preload="auto">
+								<source src="sounds/hum3.mp3"/>
+								</audio></div></a>
+			
+				
+		</div>
+	
+		
+		<!-- Mist 3 -->
+		<div id="mist3" class="theScenes">
+		
+			<div id="mist3Back"><img src="images/page3images/page3BACK.png" width="1366" height="768" position="absolute"></div>
+			
+			<a href="#"><div id="mist3wolf" class="theScenes"  onmouseenter="show('ribbon'); playSound('p3s8')"><img src="images/page3images/wolf.png" name="wolf"
+						onmouseover = "document.wolf.src = wolfCursorOn;"
+						onmouseout = "document.wolf.src = wolfCursorOff;"></div></a>
+			<a href="#"><div id="bird3" class="theScenes"  onmouseenter="show('mist3wolf'); playSound('p3s8')"><img src="images/page3images/bird.png" name="bird3"
+						onmouseover = "document.bird3.src = bird3CursorOn;"
+						onmouseout = "document.bird3.src = bird3CursorOff;"></div></a>
+			<div id="boots" class="theScenes" onmouseenter="show('paw'); playSound('p3s9')"><img src="images/page3images/boots.png">
+								<audio id="p3s9" preload="auto">
+								<source src="sounds/bit9.wav" />
+								</audio></div>
+			<a href="#" onClick="moveX(1400); moveY(800)"><div id="ribbon" class="theScenes"><img src="images/page3images/ribbon.png"></div></a>
+			
+					<!-- Feathers -->
+			<a href="#"><div id="feather1" class="theScenes" onmouseenter="show('scratch1'); playSound('p3s7')"><img src="images/page3images/feather1.png" name="feather1"
+						onmouseover = "document.feather1.src = feather1CursorOn;"
+						onmouseout = "document.feather1.src = feather1CursorOff;">
+								<audio id="p3s7" preload="auto">
+								<source src="sounds/bit7.wav" />
+								</audio></div></a>
+			<a href="#"><div id="feather2" class="theScenes" onmouseenter="show('scratch4'); playSound('p3s3')"><img src="images/page3images/feather2.png" name="feather2"
+						onmouseover = "document.feather2.src = feather2CursorOn;"
+						onmouseout = "document.feather2.src = feather2CursorOff;">
+								<audio id="p3s3" preload="auto">
+								<source src="sounds/bit3.wav" />
+								</audio></div></a>
+			<a href="#"><div id="feather3" class="theScenes" onmouseenter="show('feather4'); playSound('p3s8')"><img src="images/page3images/feather3.png" name="feather3"
+						onmouseover = "document.feather3.src = feather3CursorOn;"
+						onmouseout = "document.feather3.src = feather3CursorOff;"></div></a>
+			<a href="#"><div id="feather4" class="theScenes"  onmouseenter="show('bird3'); playSound('p3s8')"><img src="images/page3images/feather4.png" name="feather4"
+						onmouseover = "document.feather4.src = feather4CursorOn;"
+						onmouseout = "document.feather4.src = feather4CursorOff;"></div></a>
+					<!-- Scratches -->
+			<a href="#"><div id="paw" class="theScenes" onmouseenter="show('feather1'); playSound('p3s1')"><img src="images/page3images/paw.png" name="paw"
+						onmouseover = "document.paw.src = pawCursorOn;"
+						onmouseout = "document.paw.src = pawCursorOff;">
+								<audio id="p3s1" preload="auto">
+								<source src="sounds/bit1.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch1" class="theScenes" onmouseenter="show('scratch2'); playSound('p3s2')"><img src="images/page3images/scratch1.png" name="scratch1"
+						onmouseover = "document.scratch1.src = scratch1CursorOn;"
+						onmouseout = "document.scratch1.src = scratch1CursorOff;">
+								<audio id="p3s2" preload="auto">
+								<source src="sounds/bit2.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch2" class="theScenes" onmouseenter="show('scratch3'); playSound('p3s4')"><img src="images/page3images/scratch2.png" name="scratch2"
+						onmouseover = "document.scratch2.src = scratch2CursorOn;"
+						onmouseout = "document.scratch2.src = scratch2CursorOff;">
+								<audio id="p3s4" preload="auto">
+								<source src="sounds/bit4.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch3" class="theScenes" onmouseenter="show('feather2'); playSound('p3s5')"><img src="images/page3images/scratch3.png" name="scratch3"
+						onmouseover = "document.scratch3.src = scratch3CursorOn;"
+						onmouseout = "document.scratch3.src = scratch3CursorOff;">
+								<audio id="p3s5" preload="auto">
+								<source src="sounds/bit5.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch4" class="theScenes" onmouseenter="show('scratch5'); playSound('p3s6')"><img src="images/page3images/scratch4.png" name="scratch4"
+						onmouseover = "document.scratch4.src = scratch4CursorOn;"
+						onmouseout = "document.scratch4.src = scratch4CursorOff;">
+								<audio id="p3s6" preload="auto">
+								<source src="sounds/bit6.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch5" class="theScenes" onmouseenter="show('scratch6'); playSound('p3s8')"><img src="images/page3images/scratch5.png" name="scratch5"
+						onmouseover = "document.scratch5.src = scratch5CursorOn;"
+						onmouseout = "document.scratch5.src = scratch5CursorOff;">
+								<audio id="p3s8" preload="auto">
+								<source src="sounds/bit8.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch6" class="theScenes" onmouseenter="show('scratch7'); playSound('p3bell1')"><img src="images/page3images/scratch6.png" name="scratch6"
+						onmouseover = "document.scratch6.src = scratch6CursorOn;"
+						onmouseout = "document.scratch6.src = scratch6CursorOff;">
+								<audio id="p3bell1" preload="auto">
+								<source src="sounds/bell1.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch7" class="theScenes" onmouseenter="show('scratch8'); playSound('p3s8')"><img src="images/page3images/scratch7.png" name="scratch7"
+						onmouseover = "document.scratch7.src = scratch7CursorOn;"
+						onmouseout = "document.scratch7.src = scratch7CursorOff;">
+								<audio id="p3s8" preload="auto">
+								<source src="sounds/bit8.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch8" class="theScenes" onmouseenter="show('scratch9'); playSound('p3s85')"><img src="images/page3images/scratch8.png" name="scratch8"
+						onmouseover = "document.scratch8.src = scratch8CursorOn;"
+						onmouseout = "document.scratch8.src = scratch8CursorOff;">
+								<audio id="p3s85" preload="auto">
+								<source src="sounds/bit5.wav" />
+								</audio></div></a>
+			<a href="#"><div id="scratch9" class="theScenes" onmouseenter="show('feather3'); playSound('p3s81')"><img src="images/page3images/scratch9.png" name="scratch9"
+						onmouseover = "document.scratch9.src = scratch9CursorOn;"
+						onmouseout = "document.scratch9.src = scratch9CursorOff;">
+								<audio id="p3s81" preload="auto">
+								<source src="sounds/bit2.wav" />
+								</audio></div></a>
+			
+		</div>
+	
+		
+		<!-- Mist 4 -->
+		<div id="mist4" class="theScenes">
+		
+			<div id="mist4Back"><img src="images/page4images/page4BACK.png" width="1366" height="768" position="absolute"></div>
+			
+			<a href="#"><div id="arrow" class="theScenes" onmouseenter="show('bigdeer'); playSound('p4laugh1')"><img src="images/page4images/arrow.png" name="arrow" 
+						onmouseover = "document.arrow.src = arrowCursorOn;"
+						onmouseout = "document.arrow.src = arrowCursorOff;"><audio id="p4laugh1" preload="auto">
+								<source src="sounds/girllaugh.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onClick="moveX(2800); moveY(800)"><div id="bigdeer" class="theScenes" onmouseenter="playSound('p4bit8')"><img src="images/page4images/bigdeer.png" name="bigdeer"
+						onmouseover = "document.bigdeer.src = bdeerCursorOn;"
+						onmouseout = "document.bigdeer.src = bdeerCursorOff;"><audio id="p4bit8" preload="auto">
+								<source src="sounds/bit8.wav" />
+								</audio></div></a>
+			
+			<div id="candyflower" class="theScenes" ><img src="images/page4images/candyflower.png"></div>
+			
+			<a href="#" onmouseenter="show('page3plant1'); playSound('p4bit5')"><div id="candy" class="theScenes"><img src="images/page4images/candy.png" name="candy"
+						onmouseover = "document.candy.src = candyCursorOn;"
+						onmouseout = "document.candy.src = candyCursorOff;"><audio id="p4bit5" preload="auto">
+								<source src="sounds/bit5.wav" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('fly2'); playSound('p4bird5')"><div id="fly1" class="theScenes"><img src="images/page4images/fly1.png" name="p4fly1"
+						onmouseover = "document.p4fly1.src = p4fly1CursorOn;"
+						onmouseout = "document.p4fly1.src = p4fly1CursorOff;"><audio id="p4bird5" preload="auto">
+								<source src="sounds/bird5.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('littledeer'); playSound('p4bird8')"><div id="fly2" class="theScenes"><img src="images/page4images/fly2.png" name="p4fly2"
+						onmouseover = "document.p4fly2.src = p4fly2CursorOn;"
+						onmouseout = "document.p4fly2.src = p4fly2CursorOff;"><audio id="p4bird8" preload="auto">
+								<source src="sounds/bird8.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('arrow'); playSound('p4bit9')"><div id="littledeer" class="theScenes"><img src="images/page4images/littledeer.png" name="littledeer"
+						onmouseover = "document.littledeer.src = ldeerCursorOn;"
+						onmouseout = "document.littledeer.src = ldeerCursorOff;"><audio id="p4bit9" preload="auto">
+								<source src="sounds/bit9.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('page3plant2'); playSound('p4chime2')"><div id="page3plant1" class="theScenes"><img src="images/page4images/plant1.png" name="p4plant1"
+						onmouseover = "document.p4plant1.src = p4plant1CursorOn;"
+						onmouseout = "document.p4plant1.src = p4plant1CursorOff;"><audio id="p4bit9" preload="auto">
+								<source src="sounds/chime2.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('fly1')"><div id="page3plant2" class="theScenes"><img src="images/page4images/plant2.png" name="p4plant2"
+						onmouseover = "document.p4plant2.src = p4plant2CursorOn;"
+						onmouseout = "document.p4plant2.src = p4plant2CursorOff;"></div></a>
+			
+			<div id="particle1" class="theScenes" onMouseOver="changePosition('orb1', 1000, 1100, 1200)"><img src="images/page4images/particle1.png"></div>
+			<div id="particle2" class="theScenes" onMouseOver="changePosition('orb1', 1000, 1100, 1200)"><img src="images/page4images/particle2.png"></div>
+			
+			
+			
+		
+		</div>
+	
+		
+		<!-- Mist 5 -->
+		<div id="mist5" class="theScenes">
+		
+			<div id="mist5Back"><img src="images/page5images/page5BACK.png" width="1366" height="768" position="absolute"></div>
+			<div id="snow" class="theScenes"><img src="images/page5images/snow.png"></div>
+			
+			<a href="#" onmouseenter="show('apple2'); playSound('p5chime5')"><div id="apple1" class="theScenes"><img src="images/page5images/apple1.png" name="apple1"
+						onmouseover = "document.apple1.src = apple1CursorOn;"
+						onmouseout = "document.apple1.src = apple1CursorOff;"><audio id="p5chime5" preload="auto">
+								<source src="sounds/chime5.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('print1'); playSound('p5chime4')"><div id="apple2" class="theScenes"><img src="images/page5images/apple2.png" name="apple2"
+						onmouseover = "document.apple2.src = apple2CursorOn;"
+						onmouseout = "document.apple2.src = apple2CursorOff;"><audio id="p5chime4" preload="auto">
+								<source src="sounds/chime4.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('apple1'); playSound('p5chime3')"><div id="moon" class="theScenes"><img src="images/page5images/moon.png" name="moon"
+						onmouseover = "document.moon.src = moonCursorOn;"
+						onmouseout = "document.moon.src = moonCursorOff;"><audio id="p5chime3" preload="auto">
+								<source src="sounds/chime3.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('snow'); show('moon'); playSound('p5snow1')"><div id="nest" class="theScenes"><img src="images/page5images/nest.png" name="nest"
+						onmouseover = "document.nest.src =nestCursorOn;"
+						onmouseout = "document.nest.src = nestCursorOff;"><audio id="p5snow1" preload="auto">
+								<source src="sounds/snow1.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('print2'); playSound('p5snow1')"><div id="print1" class="theScenes"><img src="images/page5images/print1.png"><audio id="p5snow1" preload="auto">
+								<source src="sounds/snow1.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('print3'); playSound('p5snow2')"><div id="print2" class="theScenes"><img src="images/page5images/print2.png"><audio id="p5snow2" preload="auto">
+								<source src="sounds/snow2.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('print4'); playSound('p5snow3')"><div id="print3" class="theScenes"><img src="images/page5images/print3.png"><audio id="p5snow3" preload="auto">
+								<source src="sounds/snow3.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('fawn'); playSound('p5snow4')"><div id="print4" class="theScenes"><img src="images/page5images/print4.png"><audio id="p5snow4" preload="auto">
+								<source src="sounds/snow4.mp3" />
+								</audio></div></a>
+			
+			
+			
+			<a href="#" onClick="moveX(0); moveY(1600)"><div id="fawn" class="theScenes" onmouseenter="playSound('p5laugh1')"><img src="images/page5images/fawn.png" width="154" height="294" name="fawn"
+						onmouseover = "document.fawn.src = fawnCursorOn;"
+						onmouseout = "document.fawn.src = fawnCursorOff;"><audio id="p5laugh1" preload="auto">
+								<source src="sounds/girllaugh.mp3" />
+								</audio></div></a>
+			
+		</div>
+	
+		
+		<!-- Mist 6 -->
+		<div id="mist6" class="theScenes">
+		
+			<div id="mist6Back"><img src="images/page6images/page6BACK.png" width="1366" height="768" position="absolute"></div>
+			
+			<a href="#" onClick="moveX(1400); moveY(1600)"><div id="owl" class="theScenes"><img src="images/page6images/owl.png" name="owl"
+						onmouseover = "document.owl.src = owlCursorOn;"
+						onmouseout = "document.owl.src = owlCursorOff;"></div></a>
+			<a href="#" onmouseenter="show('branch2')"><div id="botfeather" class="theScenes"><img src="images/page6images/botfeather.png"></div></a>
+			<a href="#" onmouseenter="show('dust1')"><div id="branch1" class="theScenes"><img src="images/page6images/branch1.png"></div></a>
+			<a href="#" onmouseenter="show('dust4')"><div id="branch2" class="theScenes"><img src="images/page6images/branch2.png"></div></a>
+			
+			<a href="#" onmouseenter="show('dust2'); playSound('p6chime1')"><div id="dust1" class="theScenes" onMouseOver="changePosition('dust1', 100, 200, 300)"><img src="images/page6images/dust1.png" name="p6orb1"><audio id="p6chime1" preload="auto">
+								<source src="sounds/chime1.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('dust3'); playSound('p6chime2')"><div id="dust2" class="theScenes" onMouseOver="changePosition('dust2', 400, 500, 600)"><img src="images/page6images/dust2.png" name="p6orb2"><audio id="p6chime2" preload="auto">
+								<source src="sounds/chime2.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('botfeather'); playSound('p6chime3')"><div id="dust3" class="theScenes" onMouseOver="changePosition('dust3', 800, 900, 1000)"><img src="images/page6images/dust4.png" name="p6orb3"><audio id="p6chime3" preload="auto">
+								<source src="sounds/chime3.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('dust5'); playSound('p6chime4')"><div id="dust4" class="theScenes" onMouseOver="changePosition('dust4', 1100, 1200, 1300)"><img src="images/page6images/dust4.png" name="p6orb4"><audio id="p6chime4" preload="auto">
+								<source src="sounds/chime4.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('dust6'); playSound('p6chime5')"><div id="dust5" class="theScenes" onMouseOver="changePosition('dust5', 1000, 1100, 1200)"><img src="images/page6images/dust6.png" name="p6orb5"><audio id="p6chime5" preload="auto">
+								<source src="sounds/chime5.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('dust7'); playSound('p6chime6')"><div id="dust6" class="theScenes" onMouseOver="changePosition('dust6', 100, 200, 300)"><img src="images/page6images/dust6.png" name="p6orb6"><audio id="p6chime6" preload="auto">
+								<source src="sounds/chime1.mp3" />
+								</audio></div></a>
+			<a href="#" onmouseenter="show('eye2'); playSound('p6chime7')"><div id="dust7" class="theScenes" onMouseOver="changePosition('dust7', 400, 500, 600)"><img src="images/page6images/dust7.png" name="p6orb7"><audio id="p6chime7" preload="auto">
+								<source src="sounds/chime2.mp3" />
+								</audio></div></a>
+			
+			<a href="#" onmouseenter="show('branch1')"><div id="eye1" class="theScenes"><img src="images/page6images/eye1.png"></div></a>
+			<a href="#" onmouseenter="show('owl'); show('feathersbig')"><div id="eye2" class="theScenes"><img src="images/page6images/eye2.png"></div></a>
+			
+			<a href="#"><div id="feathersbig" class="theScenes"><img src="images/page6images/feathersbig.png"></div></a>
+			
+		</div>
+	
+		
+		<!-- Mist 7 -->
+		<div id="mist7" class="theScenes">
+			<div id="mist7Back"><img src="images/page7images/page7Back.png" width="1366" height="768" position="absolute"></div>
+			
+			<div id="bird7" class="theScenes">
+				<a href="#"><img src="images/page7images/bird7fill.png" width="96" height="76" position="absolute"
+					onMouseOver="document.bird7.src = bird7CursorOn;"
+					onMouseOut="document.bird7.src = bird7CursorOff;" name="bird7"></a></div>
+		
+		
+			
+			<a href="#" onClick="moveX(2800); moveY(1600)"><div id="glow7" class="theScenes" onmouseenter="playSound('p7bit4')"><img src="images/page7images/glow7Fill.png" width="183" height="187" name="page7glow"
+					onmouseover = "document.page7glow.src = glow7CursorOn;"
+					onmouseout = "document.page7glow.src = glow7CursorOff;"><audio id="p7bit4" preload="auto">
+								<source src="sounds/bit5.wav" />
+								</audio></div></a>
+			
+			<div id="page7fly1" class="theScenes" onmouseenter="playSound('p7bit1')" onMouseOver="changePosition('page7fly1', 300, 350, 500, 400)">
+				<img src="images/page7images/fly1.png"><audio id="p7bit1" preload="auto">
+								<source src="sounds/bit1.wav" />
+								</audio></div>
+			<div id="page7fly2" class="theScenes" onmouseenter="playSound('p7bit2')" onMouseOver="changePosition('page7fly2', 750, 650, 600, 700)">
+				<img src="images/page7images/fly2.png"><audio id="p7bit2" preload="auto">
+								<source src="sounds/bit2.wav" />
+								</audio></div>
+			<div id="page7fly3" class="theScenes" onmouseenter="playSound('p7bit3')" onMouseOver="changePosition('page7fly3', 10, 100, 150, 200)">
+				<img src="images/page7images/fly3.png"><audio id="p7bit3" preload="auto">
+								<source src="sounds/bit3.wav" />
+								</audio></div>
+		</div>
+	
+		
+		<!-- Mist 8 -->
+	<div id="mist8" class="theScenes">
+		<div id="mist8back"><img src="images/page8images/page8back.png"></div>
+		
+		<a href="#" onmouseenter="show('eb2'); playSound('p8bird1')"><div id="eb1" class="theScenes"><img src="images/page8images/bird1.png"
+					onMouseOver="document.eb1.src = eb1CursorOn;"
+					onMouseOut="document.eb1.src = eb1CursorOff;" name="eb1"><audio id="p8bird1" preload="auto">
+								<source src="sounds/bird1.mp3" />
+								</audio></div></a>
+
+		<a href="#" onmouseenter="show('eb3'); playSound('p8bird2')"> <div id="eb2" class="theScenes"><img src="images/page8images/bird2.png"
+					onMouseOver="document.eb2.src = eb2CursorOn;"
+					onMouseOut="document.eb2.src = eb2CursorOff;" name="eb2"><audio id="p8bird2" preload="auto">
+								<source src="sounds/bird2.mp3" />
+								</audio></div></a>
+
+		<a href="#" onmouseenter="show('eb4'); playSound('p8bird3')"><div id="eb3" class="theScenes"><img src="images/page8images/bird3.png"
+					onMouseOver="document.eb3.src = eb3CursorOn;"
+					onMouseOut="document.eb3.src = eb3CursorOff;" name="eb3"><audio id="p8bird3" preload="auto">
+								<source src="sounds/bird3.mp3" />
+								</audio></div></a>
+
+		<a href="#" onmouseenter="show('ebs'); playSound('p8bird4')"><div id="eb4" class="theScenes"><img src="images/page8images/bird4.png"
+					onMouseOver="document.eb4.src = eb4CursorOn;"
+					onMouseOut="document.eb4.src = eb4CursorOff;" name="eb4"><audio id="p8bird4" preload="auto">
+								<source src="sounds/bird4.mp3" />
+								</audio></div></a>
+
+		<a href="#" onmouseenter="show('girl'); show('ebhand'); playSound('p8bird5')"><div id="eb5" class="theScenes"><img src="images/page8images/bird5.png"
+					onMouseOver="document.eb5.src = eb5CursorOn;"
+					onMouseOut="document.eb5.src = eb5CursorOff;" name="eb5"><audio id="p8bird5" preload="auto">
+								<source src="sounds/bird5.mp3" />
+								</audio></div></a>
+
+		<a href="#" onClick="moveX(1400); moveY(3200);"><div id="ebhand" class="theScenes"><img src="images/page8images/hands.png"></div></a>
+
+		<a href="#" onmouseenter="show('eb5'); playSound('p8bird6')"><div id="ebs" class="theScenes"><img src="images/page8images/birds.png"
+					onMouseOver="document.ebs.src = ebsCursorOn;"
+					onMouseOut="document.ebs.src = ebsCursorOff;" name="ebs"><audio id="p8bird6" preload="auto">
+								<source src="sounds/bird6.mp3" />
+								</audio></div></a>
+
+		<a href="#" onmouseenter="playSound('p8laugh')" onClick="moveX(0); moveY(0); refresh()"><div id="girl" class="theScenes"><img src="images/page8images/girl.png"
+					onMouseOver="document.girl.src = girlCursorOn;"
+					onMouseOut="document.girl.src = girlCursorOff;" name="girl"><audio id="p8laugh" preload="auto">
+								<source src="sounds/girllaugh.mp3" />
+								</audio></div></a>
+		
+	</div>
+		
+		<!-- Page 9 -->
+		
+	<div id="mist9" class="theScenes">
+		<div id="mist9back"><img src="images/page9images/page9back.png"></div>
+		
+		<a href="#" onClick="show('crack1'); playSound('p9snow1')"><div id="hands" class="theScenes"><img src="images/page9images/hands.png" 
+					onMouseOver="document.hands.src = handsCursorOn;"
+					onMouseOut="document.hands.src = handsCursorOff;" name="hands"><audio id="p9snow1" preload="auto">
+								<source src="sounds/snow1.mp3" />
+								</audio></div></a>
+		
+		<a href="#" onClick="show('crack2'); playSound('p9snow2')"><div id="crack1" class="theScenes"><img src="images/page9images/crack1.png"><audio id="p9snow2" preload="auto">
+								<source src="sounds/snow2.mp3" />
+								</audio></div></a>
+		<a href="#" onClick="show('crack3'); playSound('p9snow3')"><div id="crack2" class="theScenes"><img src="images/page9images/crack2.png"><audio id="p9snow3" preload="auto">
+								<source src="sounds/snow3.mp3" />
+								</audio></div></a>
+		<a href="#" onClick="show('crack4'); playSound('p9snow4')"><div id="crack3" class="theScenes"><img src="images/page9images/crack3.png"><audio id="p9snow4" preload="auto">
+								<source src="sounds/snow4.mp3" />
+								</audio></div></a>
+		<a href="#" onClick="show('crack5'); playSound('p9snow5')"><div id="crack4" class="theScenes"><img src="images/page9images/crack4.png"><audio id="p9snow5" preload="auto">
+								<source src="sounds/snow5.mp3" />
+								</audio></div></a>
+		<a href="#" onClick="moveX(0); moveY(0); playSound('p9bell1'); refresh()"><div id="crack5" class="theScenes"><img src="images/page9images/crack5.png" 
+					onMouseOver="document.crack5.src = crack5CursorOn;"
+					onMouseOut="document.crack5.src = crack5CursorOff;" name="crack5"><audio id="p9bell1" preload="auto">
+								<source src="sounds/hum4.mp3" />
+								</audio></div></a>
+		
+		
+	</div>
+		
+		<!-- End -->
+	</div>
+</div>
+</body>
+</html>
